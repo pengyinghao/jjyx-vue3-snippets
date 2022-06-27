@@ -1,0 +1,46 @@
+{
+  "name": "jjyx-vue3-snippets",
+  "displayName": "jjyx-vue3-snippets",
+  "description": "页面内置模板",
+  "author": "pengyinghao",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "repository": "",
+  "keywords": [
+    "jjyx"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:jjyx-template.helloWorld"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "vue",
+        "aliases": [
+          "vue",
+          "Vue"
+        ],
+        "extensions": [
+          ".vue"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/search-page.json"
+      }
+    ]
+  },
+  "dependencies": {}
+}

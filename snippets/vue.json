@@ -1,0 +1,17 @@
+{
+  "templateLang": {
+    "prefix": "vue3",
+    "body": [
+      "<template></template>",
+      "<script lang=\"ts\" setup name=\"$1$TM_FILENAME_BASE\">",
+      "</script>",
+      "<style lang=\"scss\" scoped></style>"
+    ],
+    "description": "空页面模板"
+  },
+  "styleLang": {
+    "prefix": "style",
+    "body": ["<style lang=\"scss\" scoped>", "</style>"],
+    "description": "样式"
+  }
+}
