@@ -3,7 +3,8 @@
   "displayName": "jjyx-vue3-snippets",
   "description": "页面内置模板",
   "author": "pengyinghao",
-  "version": "0.0.1",
+  "publisher": "pengyinghao",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.68.0"
   },
@@ -14,10 +15,8 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:jjyx-template.helloWorld"
-  ],
-  "main": "./out/extension.js",
+  "activationEvents": [],
+  "main": "./src/extension.js",
   "contributes": {
     "languages": [
       {

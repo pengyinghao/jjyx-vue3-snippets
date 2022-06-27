@@ -1,0 +1,3 @@
+全局安装vsce
+打包：vsce package
+发布：vsce publish
