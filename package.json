@@ -7,7 +7,7 @@
   "engines": {
     "vscode": "^1.68.0"
   },
-  "repository": "",
+  "repository": "https://github.com/pengyinghao/jjyx-vue3-snippets",
   "keywords": [
     "jjyx"
   ],
