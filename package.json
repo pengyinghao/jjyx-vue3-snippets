@@ -4,7 +4,7 @@
   "description": "页面内置模板",
   "author": "pengyinghao",
   "publisher": "pengyinghao",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.68.0"
   },
@@ -38,6 +38,18 @@
       {
         "language": "vue",
         "path": "./snippets/search-page.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/modal.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/flow-modal.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/flow-page.json"
       }
     ]
   },

@@ -2,7 +2,9 @@
   "templateLang": {
     "prefix": "vue3",
     "body": [
-      "<template></template>",
+      "<template>",
+      "  <PageContainer></PageContainer>",
+      "</template>",
       "<script lang=\"ts\" setup name=\"$1$TM_FILENAME_BASE\">",
       "</script>",
       "<style lang=\"scss\" scoped></style>"

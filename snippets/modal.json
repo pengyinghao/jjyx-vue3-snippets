@@ -1,0 +1,45 @@
+{
+  "templateLang": {
+    "prefix": "modal",
+    "body": [
+      "<template>",
+      "  <c-modal v-model:visible=\"visible\" title=\"Title\" @cancel=\"onCancel(false)\" @ok=\"onOk\"> </c-modal>",
+      "</template>",
+      "<script lang=\"ts\" setup name=\"$1$TM_FILENAME_BASE\">",
+      "import { CModal } from '@/components/antdExtend/index'",
+      "interface Emits {",
+      "   /** 窗口关闭事件 */",
+      "   (e: 'close', isRefreshData?: boolean): void",
+      "  }",
+      "const emits = defineEmits<Emits>()",
+      "const state = reactive<State>({",
+      "  visible: false,",
+      "  loading: false",
+      "})",
+      "const { visible } = toRefs(state)",
+
+      "/** 打开窗口 */",
+      "function showModal() {",
+      "  state.visible = true",
+      "}",
+
+      "/** 按钮提交 */",
+      "function onOk() {",
+      "  onCancel(true)",
+      "}",
+
+      "/** 窗口关闭 */",
+      "function onCancel(isRefreshData = false) {",
+      "  state.visible = false",
+      "  emits('close', isRefreshData)",
+      "}",
+
+      "defineExpose({",
+      "  showModal",
+      "})",
+      "</script>",
+      "<style lang=\"scss\" scoped></style>"
+    ],
+    "description": "模态框模板"
+  }
+}

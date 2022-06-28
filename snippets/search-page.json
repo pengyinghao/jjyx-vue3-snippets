@@ -3,7 +3,9 @@
     "prefix": "search-page",
     "body": [
     "<template>",
-    "  <div>",
+    "  <PageContainer>",
+    "    <template #left>左侧内容</template>",
+    "    <template #right>右侧内容</template>",
     "    <c-table :columns=\"columns\" url=\"\" show-refresh-btn  :search-options=\"searchOptions\">"
     "      <template #bodyCell=\"{ column }\">"
     "        <template v-if=\"column.key === 'action'\">",
@@ -15,7 +17,7 @@
     "        </template>",
     "      </template>",
     "    </c-table>",
-    "  </div>",
+    "  </PageContainer>",
     "</template>",
    "<script lang=\"ts\" setup name=\"$1$TM_FILENAME_BASE\">",
     "import { TableColumnType } from 'ant-design-vue'",
