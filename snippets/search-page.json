@@ -6,11 +6,11 @@
     "  <PageContainer>",
     "    <template #left>左侧内容</template>",
     "    <template #right>右侧内容</template>",
-    "    <c-table :columns=\"columns\" url=\"\" show-refresh-btn  :search-options=\"searchOptions\">"
-    "      <template #bodyCell=\"{ column }\">"
+    "    <c-table :columns=\"columns\" url=\"\" show-refresh-btn :search=\"{ options: searchOptions }\" >",
+    "      <template #bodyCell=\"{ column }\">",
     "        <template v-if=\"column.key === 'action'\">",
-    "          <span>"
-    "            <a>编辑</a>"
+    "          <span>",
+    "            <a>编辑</a>",
     "            <a-divider type=\"vertical\" />",
     "            <a>删除</a>",
     "          </span>",
