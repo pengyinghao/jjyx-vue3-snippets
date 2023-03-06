@@ -39,17 +39,12 @@
       "    </template>",
       "  </c-modal>",
       "</template>",
-      "<script lang=\"ts\" setup name=\"test\">",
+      "<script lang=\"ts\" setup>",
       "import { CModal } from '@/components/antdExtend/index'",
       "import Icon from '@/components/Icon/Icon.vue'",
       "import FirstComponent from './firstComponent.vue'",
       "import SecondComponent from './secondComponent.vue'",
       "import LastComponent from './lastComponent.vue'",
-
-      "interface Emits {",
-      "  /** 窗口关闭事件 */",
-      "  (e: 'close', isRefreshData?: boolean): void",
-      "}",
 
       "interface FlowState extends State {",
       "  /** 当前步骤 */",
@@ -58,7 +53,7 @@
       "  includeComponentName: string[]",
       "}",
 
-      "const emits = defineEmits<Emits>()",
+      "const emits = defineEmits([\"close\"])",
       "const state = reactive<FlowState>({",
       "  visible: false,",
       "  loading: false,",
@@ -110,7 +105,7 @@
   },
   "styleLang": {
     "prefix": "style",
-    "body": ["<style lang=\"scss\" scoped>", "</style>"],
+    "body": ["<style lang=\"less\" scoped>", "</style>"],
     "description": "样式"
   }
 }

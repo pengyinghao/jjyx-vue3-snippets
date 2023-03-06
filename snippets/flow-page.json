@@ -32,10 +32,11 @@
       "    </div>",
       "  </PageContainer>",
       "</template>",
-      "<script lang=\"ts\" setup name=\"FlowPage\">",
+      "<script lang=\"ts\" setup>",
       "import FirstComponent from './firstComponent.vue'",
       "import SecondComponent from './secondComponent.vue'",
       "import LastComponent from './lastComponent.vue'",
+
       "interface State {",
       "  /** 当前步骤 */",
       "  current: number",
@@ -72,13 +73,13 @@
       "  router.go(-1)",
       "}",
       "</script>",
-      "<style lang=\"scss\" scoped></style>"
+      "<style lang=\"less\" scoped></style>"
     ],
     "description": "流程模板"
   },
   "styleLang": {
     "prefix": "style",
-    "body": ["<style lang=\"scss\" scoped>", "</style>"],
+    "body": ["<style lang=\"less\" scoped>", "</style>"],
     "description": "样式"
   }
 }

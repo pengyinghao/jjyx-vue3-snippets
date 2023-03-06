@@ -5,15 +5,17 @@
       "<template>",
       "  <PageContainer></PageContainer>",
       "</template>",
-      "<script lang=\"ts\" setup name=\"$1$TM_FILENAME_BASE\">",
+      "<script lang=\"ts\" setup>",
+      "import { PageContainer } from '@/components'",
+      
       "</script>",
-      "<style lang=\"scss\" scoped></style>"
+      "<style lang=\"less\" scoped></style>"
     ],
     "description": "空页面模板"
   },
   "styleLang": {
     "prefix": "style",
-    "body": ["<style lang=\"scss\" scoped>", "</style>"],
+    "body": ["<style lang=\"less\" scoped>", "</style>"],
     "description": "样式"
   }
 }

@@ -1,10 +1,10 @@
 {
   "name": "jjyx-vue3-snippets",
   "displayName": "jjyx-vue3-snippets",
-  "description": "页面代码块",
+  "description": "佳杰云星算力-页面代码块",
   "author": "pengyinghao",
   "publisher": "pengyinghao",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "icon": "img/logo.jpeg",
   "engines": {
     "vscode": "^1.5.0"
